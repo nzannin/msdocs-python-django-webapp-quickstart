@@ -16,7 +16,7 @@ def hello(request):
             return redirect('index')
         else:
             print("Request for hello page received with name=%s" % name)
-            context = {'name': name }
+            context = {'name': "secco" }
             return render(request, 'hello_azure/hello.html', context)
     else:
         return redirect('index')
